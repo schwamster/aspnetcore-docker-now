@@ -23,7 +23,7 @@ Follow the instructions (if you havent run now before you will have to register 
 
 The output of the build/deploy process will supply you with an url to the deployed app.
 
-Find out more at [https://zeit.co/docs](zeit docs)
+Find out more at [https://zeit.co/docs](zeit-docs)
 
 ## Important
 
