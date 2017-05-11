@@ -1,11 +1,13 @@
-FROM microsoft/aspnetcore
+FROM microsoft/aspnetcore-build
 
 ENV ASPNETCORE_URLS=http://+:80
 
 EXPOSE 80
 
-COPY ./bin/Release/netcoreapp1.1/publish /opt/app
+COPY . /opt/app
 
 WORKDIR /opt/app
 
-CMD dotnet get-started-docker.dll
+RUN dotnet restore
+
+CMD dotnet run

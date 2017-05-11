@@ -1,6 +1,7 @@
 # Deploy an Hello World Asp.Net Core app with "now"
 
 This repo is a simple hello world Asp.Net Core Web Api that will demonstrate how too deploy a containerized core app with Zeit now.
+Check out this article on [](dev.to) that explains the steps in more detail.
 
 ## Prerequisites
 
@@ -10,10 +11,6 @@ This repo is a simple hello world Asp.Net Core Web Api that will demonstrate how
 ## Install "now"
 
     npm install -g now
-
-## Build the application
-
-    dotnet publish -c Release
 
 ## Publish the app.
 
@@ -30,5 +27,3 @@ Find out more at [https://zeit.co/docs](zeit-docs)
 If you run the default free OSS-Plan there is a restriction in file size for the uploaded of 1 MB per file. Since dotnet publish generates the unnecessary refs/Microsoft.CodeAnalysis* -files that bigger than that your deploy will not work unless you add the following to your csproj:
 
     <PreserveCompilationContext>false</PreserveCompilationContext>
-
-This is already done in this repos csproj.
