@@ -1,7 +1,7 @@
 # Deploy an Hello World Asp.Net Core app with "now"
 
 This repo is a simple hello world Asp.Net Core Web Api that will demonstrate how too deploy a containerized core app with Zeit now.
-Check out this article on [](dev.to) that explains the steps in more detail.
+Check out this article on [https://dev.to/schwamster/deploying-a-aspnet-core-container-with-zeit-now](dev.to) that explains the steps in more detail.
 
 ## Prerequisites
 
